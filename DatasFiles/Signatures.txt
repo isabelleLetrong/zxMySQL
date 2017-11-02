@@ -1,0 +1,12 @@
+﻿Signature	Procedure/Function/Trigger Name
+0	MySQL routine
+900000	zxitMySQL
+900100	Emails_cleanupAndCheck()
+900200	PhoneNumber_cleanupAndCheck()
+900300	getLastAndFirstNameFromFullName()
+901000	getLastAndFirstNameFromFullName()
+901100	$XmlOpenElement()
+901200	$Log_insertArgument()
+901300	$XmlInsertAttributeInCurrentElement()
+901400	$XmlCloseElement()
+901500	$XmlGetPreviousTag()
