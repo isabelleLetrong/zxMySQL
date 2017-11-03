@@ -5,13 +5,15 @@ CREATE DEFINER=`iletrong`@`%` 	FUNCTION 					zxitMySQL.$Status_getDescription	(
 
 $InStatus						INTEGER(10)		UNSIGNED
 
-) RETURNS varchar(255) CHARSET utf8
-    READS SQL DATA
-    COMMENT 'Version 3.0 - Retourne le libellé d''un code retour de Procédure Stockée'
+) RETURNS varchar(255) 			CHARSET 		utf8
+
+								READS SQL DATA
+
+COMMENT 						'Version 3.0 - Retourne le libellé d''un code retour de Procédure Stockée'
+
 BEGIN
 /* ===============================================================================================================
 **	$Status_getDescription()	Retourne le libellé d'un code retour de Procédure Stockée
-**								SPECIAL MySQL 5.5 Usage
 ***	--------------------------------------------------------------------------------------------------------------
 **	Auteur			:			IT-DaaS	-	Isabelle LE TRONG
 **
@@ -69,7 +71,7 @@ END IF																											;
 
 SET	$ProcedureName	=	CONCAT($Sender, '.', $ProcedureName)													;
 /*
-**	(3)	Get $Status Description
+**	(2)	Get $Status Description
 */
 SET		$Status			=	$InStatus -	$Signature													;
 
@@ -83,10 +85,8 @@ IF		($Description IS NULL)
 THEN	SET	$Description	=	$DefaultDescription													;
 END IF																								;
 /*
-**	(4)	Get possible MySQL Diagnostics	(only for MySQL 5.6.4 or higher releases)
-**
+**	(3)	Get possible MySQL Diagnostics (only for MySQL 5.6.4 or higher releases)
 */
-/*
 GET CURRENT DIAGNOSTICS
 	$ConditionId	=	NUMBER																		;
 
@@ -98,8 +98,6 @@ THEN	GET DIAGNOSTICS	CONDITION	$ConditionId
 			$MySQLReport	=	MESSAGE_TEXT														;
 ELSE	SET	$MySQL_ERRNO	=	'0000'																;
 END IF																								;
-*/
-SET	$MySQL_ERRNO	=	'0000'																		;
 /*
 **	(EXIT)
 */
@@ -110,4 +108,3 @@ RETURN CONCAT(	'Status : '			,	CAST($InStatus AS CHAR)						,
 
 END
 $$
-
