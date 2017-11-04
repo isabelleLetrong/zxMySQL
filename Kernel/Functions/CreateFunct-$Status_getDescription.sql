@@ -14,7 +14,8 @@ COMMENT 						'Version 3.0 - Retourne le libellé d''un code retour de Procédur
 BEGIN
 /* ===============================================================================================================
 **	$Status_getDescription()	Retourne le libellé d'un code retour de Procédure Stockée
-***	--------------------------------------------------------------------------------------------------------------
+**								Version MySQL 5.6.4 et plus
+**	--------------------------------------------------------------------------------------------------------------
 **	Auteur			:			IT-DaaS	-	Isabelle LE TRONG
 **
 **	Versions 		:			3.0		2017-03-24	Recherche de l'émetteur
