@@ -11,7 +11,7 @@ $InStatus						INTEGER(10)		UNSIGNED
 BEGIN
 /* ===============================================================================================================
 **	$Status_getDescription()	Retourne le libellé d'un code retour de Procédure Stockée
-**								SPECIAL MySQL 5.5 Usage
+**								pre 5.6.4 MySQL releases usage
 ***	--------------------------------------------------------------------------------------------------------------
 **	Auteur			:			IT-DaaS	-	Isabelle LE TRONG
 **
