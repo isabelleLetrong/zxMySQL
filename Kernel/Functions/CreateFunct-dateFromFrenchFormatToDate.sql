@@ -29,7 +29,7 @@ BEGIN
 **
 ** (V) Variables Locales
 */
-DECLARE	$Version	DECIMAL(4,2)	UNSIGNED	DEFAULT	1.0												;
+DECLARE	$Version	DECIMAL(4,2)	UNSIGNED	DEFAULT	2.0												;
 /*
 **	(H) HANDLERs
 */
