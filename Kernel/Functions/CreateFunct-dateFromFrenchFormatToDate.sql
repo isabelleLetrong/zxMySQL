@@ -10,7 +10,7 @@ $FrenchDate						VARCHAR(10)
 								DETERMINISTIC
 								CONTAINS SQL
 
-COMMENT 						'Version 1.1 - Convertie une Date au format JJ/MM/AAAA - Utilisation de STR_TO_DATE()'
+COMMENT 						'Version 2.0 - Convertie une Date au format JJ/MM/AAAA - Utilisation de STR_TO_DATE()'
 
 BEGIN
 /* ======================================================================================================
